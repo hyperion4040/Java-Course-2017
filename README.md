@@ -1,10 +1,10 @@
-##Zmienne, Typy danych 
+## Zmienne, Typy danych 
 
-####Zmienna
+#### Zmienna
 
 Jest to obszar pamięci komputera, któremu nadaliśmy nazwę oraz określiliśmy jego typ.
 
-####Typy danych
+#### Typy danych
 
 Program napisany w języku java przechowuje i manipuluje dwoma rodzajami typów danych.
 
@@ -16,7 +16,7 @@ Program napisany w języku java przechowuje i manipuluje dwoma rodzajami typów 
 
 ![Java primitive types](http://www.write-technical.com/126581/session2/index.6.gif)
 
-##Identyfikatory
+## Identyfikatory
 
 Są to nazwy nadawane przez programistę poszczególnym elementom programu.
 
@@ -32,12 +32,12 @@ Zmienną można zainicjować (przypisać do niej wartość) od razu podczas dekl
 
 Tak wygląda utworzenie zmiennej i jednoczesna inicjalizacja.
 
-```
+```java
 int mojaZmienna = 0;
 ```
 
 Tak natomiast utworzenie zmiennej i oddzielna inicjalizacja
-```
+```java
 int mojaZmienna;
 mojaZmienna =0;
 ```
@@ -46,7 +46,7 @@ mojaZmienna =0;
 
 ![Java keywords](http://codetpoint.com/wp-content/uploads/2015/03/java-tutorial-keywords-in-java.jpg)
 
-##Operatory
+## Operatory
 
 Operator jest znakiem używanym na operandach.
 
@@ -54,7 +54,7 @@ Przykłady użycia operatorów znajdują się kodzie źródłowym.
 
 ![Operatory](http://ecomputernotes.com/images/Operator-Precedence.jpg)
 
-##Konwersja(Castowanie)
+## Konwersja(Castowanie)
 
 Czasem sytuacja wymaga przypisania do typu jednego rodzaju wartości innego typu.
 W języku java występują dwa rodzaje konwersji.
@@ -65,7 +65,7 @@ o mniejszym przedziale dostępnych wartości możemy użyć konwersji niejawnej.
 
 Wygląda ona następująco:
 
-```
+```java
 int myInt = 45000;
 long myLong = myInt;
 ```
@@ -75,7 +75,7 @@ większym zakresie musimy dokonać konwersji(castowania)
 jawnego, nawet pomimo tego, że wartość zmiennej jest zarówno w zakresie 
 jednego jak i drugiego typu:
 
-```
+```java
 double myDouble = 123.4;
 int myInt;
 myInt = (int) myDouble;
