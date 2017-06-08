@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Java-Course-Library">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../Java-Course-Library.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Java-Course-Library.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../Java-Course-Library.jar!/src" />
+      <root url="jar://$PROJECT_DIR$/../Java-Course-Library.jar!/src" />
     </SOURCES>
   </library>
 </component>
