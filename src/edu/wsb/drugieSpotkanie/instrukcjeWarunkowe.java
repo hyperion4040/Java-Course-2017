@@ -85,35 +85,61 @@ public class instrukcjeWarunkowe {
         /*
         Możemy też sprawdzać czy zmienna podana przez użytkownika czy jakaś inna
         jaką używamy spełnia nasze oczekiwania
-
          */
         int pobranaZmienna = StandardInput.readInt("Podaj liczbę");
         System.out.println("Czekaj");
-        if (3<= pobranaZmienna || pobranaZmienna > 10 ) {
-           // System.out.println("Jesteśmy w sali 113");
-           // System.out.println("WSB");
-            if (3 < pobranaZmienna)
-                System.out.println("Liczba była większa od 3");
+        if (3>= pobranaZmienna && pobranaZmienna <= 10 ) {
+            if (3 == pobranaZmienna)
+                System.out.println("Liczba jest równa 3");
             else
-                System.out.println("Liczba równa 3");
+                System.out.println("Liczba jest w przedziale zamkniętnym <3,10>");
         }
         else
-           // System.out.println("W warunku był fałsz");
-        System.out.println("Liczba była mniejsza od 3");
-//        int liczba = 5;
-//
-//        if (liczba < 3 || liczba > 6 )
-//            if(liczba < 5)
-//            System.out.println("Liczba jest mniejsza od 3 lub większa od 6");
+            System.out.println("Liczba nie spełnia żadnego lub tylko jeden z warunków");
 
-//        char znak = 'e';
+        /*
+            Uważać należy na to jakie warunki są łączone poprzez operator &&
+         */
+        if (pobranaZmienna %3 ==0 && pobranaZmienna <2){
+            System.out.println("Ten warunek nigdy nie zostanie spełniony gdyż nie" +
+                    "ma takiej liczby, która zarówno będzie mniejsza od 2 i" +
+                    "będzie dzielić się bez reszty przez 3");
+        }else
+            System.out.println("Za każdym razem ten fragment zostanie odpalony");
+
+        /*
+        Poniższy fragment kodu sprawdza czy liczba jest mniejsza od 3 lub większa
+        od 6
+         */
+        int liczba = 5;
+
+        if (liczba < 3 || liczba > 6 )
+            if(liczba < 5)
+            System.out.println("Liczba jest mniejsza od 3 lub większa od 6");
+
+
+        /*
+            W przypadku gdy cały czas sprawdzamy czy liczba jest dokładnie równa jakiejś
+            zamiast zagnieżdzonych instrukcji if else może skorzystać ze switch.
+            Problemem switch jest to, że musimy niejako na sztywno wpisać w case
+            z czym porównujemy
+         */
             char znak = StandardInput.readChar("Podaj znak");
         switch (znak){
+            /*
+                Nie musimy pisać osobno każdego case możemy je tak jak w poniższym
+                umieścić jeden po drugim
+                Po fragmencie, który dla danego case ma się wykonać używamy break, który to sprawia, że
+                wychodzimy z switch.
+             */
             case 'q':
             case 'e':
                 System.out.println("Wypisałeś q");
                 System.out.println("Lub wypisałeś e");
                 break;
+                /*
+                    Default wykonuje się dla każdego innego case
+                 */
             default:
                 System.out.println("Nie ma takiego przypadku");
                 break;
