@@ -20,6 +20,7 @@ public class TabliceOrazPętle {
          */
         imie[0] = "Paweł";
         imie[1] = "Piotr";
+        System.out.println(imie[0]);
         /*
         Możemy też to zrobić za jednym zamachem, nie podajemy jednak wówczas wielkości
         tablicy w [], gdyż jest ona ustalana automatycznie na podstawie liczby elementów
@@ -48,21 +49,35 @@ public class TabliceOrazPętle {
         stosujemy pętle while.
          */
         int liczba =0;
-        do {
+        while (liczba <nazwiska.length)
+        {
+            System.out.println(nazwiska[liczba]);
+            liczba++;
+        }
+        System.out.println();
+        /*
+           Oprócz pętli while jest też pętla do while, która to wykona conajmniej jedną
+           iterację, nawet jeśli warunek w while jest fałszywy
+         */
+        do{
             System.out.println(nazwiska[liczba]);
             liczba++;
         }while (liczba <nazwiska.length);
         System.out.println();
-
-        int liczbaNowa = 1;
-        while (liczbaNowa < 1){
-            System.out.println(liczbaNowa);
-            liczbaNowa++;
-        }
-        System.out.println();
-
+        /*
+            Pętla może też być iterowana w przeciwnym kierunku.
+            Od wartości największej do najmniejszej.
+            Tutaj będziemy wypisywać imiona w odwrotnej kolejności niż
+            ta, w jakiej zostały wprowadzone do tablicy
+         */
         String[] imieNowe = new String[]{"Adrian","Piotr","Mateusz"};
-
+        /*
+            Dodamy jeszcze warunek, by w przypadku jak w tablicy jest tylko jedno
+            imię zwyczajnie wypisał element 0 z tablicy.
+            Sprawdzić to możemy za pomocą funkcji length, która zwraca długość
+            tablicy.
+            Należy uważać bo długość tablicy jest różna od numeru ostatniego elementu.
+        */
         if (imieNowe.length ==1){
             System.out.println(imieNowe[0]);
         }
@@ -71,7 +86,17 @@ public class TabliceOrazPętle {
                 System.out.println(imieNowe[i]);
             }
         }
-
+        /*
+            Możemy też zamiast instrukcji warunkowej if skorzystać ze switch
+            A zamiast pętli for z pętli while.
+            Trzeba jednak uważać zawsze na warunek, który sprawdza
+             czy pętla ma się dalej wykonywać czy zakończyć.
+             Sam zrobiłem ten błąd i zamiast
+             wpisać
+                    while(i >= 0)
+                    zapisałem while(i > 0)
+            Sprawiło to, że pętla nie wypisywała wszystkich nazwisk
+         */
         System.out.println();
         String[] nazwiskaNowe = new String[]{"Kozłowski","Kozioł"};
 
