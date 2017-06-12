@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90eee0ca-63e0-47a2-93cc-55a568c6e618" name="Default" comment="Added Readme file for future package trzecieSpotkanie">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/wsb/Readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Course-2017/edu/wsb/drugieSpotkanie/TabliceOrazPętle.class" afterPath="$PROJECT_DIR$/out/production/Java-Course-2017/edu/wsb/drugieSpotkanie/TabliceOrazPętle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Course-2017/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.class" afterPath="$PROJECT_DIR$/out/production/Java-Course-2017/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.class" />
+    <list default="true" id="90eee0ca-63e0-47a2-93cc-55a568c6e618" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/TabliceOrazPętle.java" afterPath="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/TabliceOrazPętle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.java" afterPath="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/wsb/Readme.md" afterPath="$PROJECT_DIR$/src/edu/wsb/Readme.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,12 +38,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/wsb/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="533">
-                <caret line="324" column="3" lean-forward="true" selection-start-line="324" selection-start-column="3" selection-end-line="324" selection-end-column="3" />
+              <first_editor relative-caret-position="1067">
+                <caret line="308" column="5" lean-forward="false" selection-start-line="308" selection-start-column="5" selection-end-line="308" selection-end-column="5" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -57,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="instrukcjeWarunkowe.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="instrukcjeWarunkowe.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="700">
               <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
               <folding />
             </state>
@@ -81,11 +77,20 @@
       <find>imie</find>
       <find>imieNone</find>
       <find>nazwiska</find>
+      <find>##</find>
+      <find>&lt;span style=&quot;font-size: 18pt&quot;&gt;</find>
+      <find>```java</find>
+      <find>```</find>
+      <find>&lt;/span&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>imieNone</replace>
       <replace>imieNowe</replace>
       <replace>nazwiskaNowe</replace>
+      <replace>&lt;span style=&quot;font-size: 24pt&quot;&gt;</replace>
+      <replace>&lt;span style=&quot;font-size: 18pt&quot;&gt;</replace>
+      <replace>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-language=&quot;java&quot;&gt;</replace>
+      <replace>```</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -1078,7 +1083,7 @@
       <workItem from="1497096791151" duration="1469000" />
       <workItem from="1497105633109" duration="1025000" />
       <workItem from="1497280769546" duration="3926000" />
-      <workItem from="1497289007849" duration="5255000" />
+      <workItem from="1497289007849" duration="6736000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1496334216217</created>
@@ -1136,11 +1141,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497284848544</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added Readme file for future package trzecieSpotkanie">
+      <created>1497295150584</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1497295150584</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51720000" />
+    <option name="totallyTimeSpent" value="53201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1529,19 +1541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="559">
-            <caret line="301" column="0" lean-forward="false" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/wsb/pierwszeSpotkanie/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1561,6 +1560,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="260">
+            <caret line="298" column="1" lean-forward="true" selection-start-line="298" selection-start-column="1" selection-end-line="298" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/TabliceOrazPętle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1572,21 +1592,13 @@
     <entry file="file://$PROJECT_DIR$/src/edu/wsb/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="533">
-            <caret line="324" column="3" lean-forward="true" selection-start-line="324" selection-start-column="3" selection-end-line="324" selection-end-column="3" />
+          <first_editor relative-caret-position="1067">
+            <caret line="308" column="5" lean-forward="false" selection-start-line="308" selection-start-column="5" selection-end-line="308" selection-end-column="5" />
             <folding />
           </first_editor>
           <second_editor>
             <js_state />
           </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>

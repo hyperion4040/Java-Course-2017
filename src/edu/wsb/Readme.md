@@ -304,7 +304,7 @@ for (String ciagZnakow : zbior) {
 }
 ```
 
-#### MAP
+#### MAP 
 
 **java.util.Map**
 
