@@ -8,6 +8,9 @@ import edu.wsb.StandardInput;
  */
 public class instrukcjeWarunkowe {
 
+
+
+
     public static void main(String[] args) {
 
         /*

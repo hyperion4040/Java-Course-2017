@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90eee0ca-63e0-47a2-93cc-55a568c6e618" name="Default" comment="Added Readme file to package drugieSpotkanie">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/README.md" />
+    <list default="true" id="90eee0ca-63e0-47a2-93cc-55a568c6e618" name="Default" comment="Added Readme file for future package trzecieSpotkanie">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/wsb/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Course-2017/edu/wsb/drugieSpotkanie/TabliceOrazPętle.class" afterPath="$PROJECT_DIR$/out/production/Java-Course-2017/edu/wsb/drugieSpotkanie/TabliceOrazPętle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Course-2017/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.class" afterPath="$PROJECT_DIR$/out/production/Java-Course-2017/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/TabliceOrazPętle.java" afterPath="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/TabliceOrazPętle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.java" afterPath="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,22 +32,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TabliceOrazPętle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TabliceOrazPętle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/TabliceOrazPętle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+            <state relative-caret-position="160">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/README.md">
+      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/wsb/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="439">
-                <caret line="301" column="0" lean-forward="false" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+              <first_editor relative-caret-position="533">
+                <caret line="324" column="3" lean-forward="true" selection-start-line="324" selection-start-column="3" selection-end-line="324" selection-end-column="3" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -54,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="instrukcjeWarunkowe.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="instrukcjeWarunkowe.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2800">
-              <caret line="140" column="20" lean-forward="false" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
+            <state relative-caret-position="125">
+              <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -101,9 +104,10 @@
         <option value="$PROJECT_DIR$/src/edu/wsb/pierwszeSpotkanie/Operatory.java" />
         <option value="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/main.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.java" />
         <option value="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/README.md" />
         <option value="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/TabliceOrazPętle.java" />
+        <option value="$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.java" />
+        <option value="$PROJECT_DIR$/src/edu/wsb/Readme.md" />
       </list>
     </option>
   </component>
@@ -324,6 +328,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Java-Course-2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java-Course-2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java-Course-2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wsb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1055,7 +1077,8 @@
       <workItem from="1497091651387" duration="164000" />
       <workItem from="1497096791151" duration="1469000" />
       <workItem from="1497105633109" duration="1025000" />
-      <workItem from="1497280769546" duration="3728000" />
+      <workItem from="1497280769546" duration="3926000" />
+      <workItem from="1497289007849" duration="5255000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1496334216217</created>
@@ -1106,11 +1129,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497106568265</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Readme file to package drugieSpotkanie">
+      <created>1497284848544</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1497284848544</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46267000" />
+    <option name="totallyTimeSpent" value="51720000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1136,7 +1166,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3434263" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34900397" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CodotaView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1203,7 +1233,8 @@
     <MESSAGE value="Added main Readme file" />
     <MESSAGE value="fina version of files in drugieSpotkanie package" />
     <MESSAGE value="Added Readme file to package drugieSpotkanie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Readme file to package drugieSpotkanie" />
+    <MESSAGE value="Added Readme file for future package trzecieSpotkanie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Readme file for future package trzecieSpotkanie" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1216,14 +1247,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/TabliceOrazPętle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1506,11 +1529,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2800">
-          <caret line="140" column="20" lean-forward="false" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="559">
+            <caret line="301" column="0" lean-forward="false" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
         </state>
       </provider>
     </entry>
@@ -1533,11 +1561,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/README.md">
+    <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/TabliceOrazPętle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/wsb/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="439">
-            <caret line="301" column="0" lean-forward="false" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+          <first_editor relative-caret-position="533">
+            <caret line="324" column="3" lean-forward="true" selection-start-line="324" selection-start-column="3" selection-end-line="324" selection-end-column="3" />
             <folding />
           </first_editor>
           <second_editor>
@@ -1546,10 +1582,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/TabliceOrazPętle.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/wsb/drugieSpotkanie/instrukcjeWarunkowe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
           <folding />
         </state>
       </provider>

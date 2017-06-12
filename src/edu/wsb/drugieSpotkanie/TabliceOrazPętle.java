@@ -6,6 +6,10 @@ package edu.wsb.drugieSpotkanie;
  */
 public class TabliceOrazPętle {
 
+
+
+
+
     public static void main(String[] args) {
 
         /*
