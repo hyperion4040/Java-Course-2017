@@ -27,6 +27,7 @@ public class TabliceOrazPętle {
         Pozycję w tablicy liczymy od 0
          */
         String[] nazwiska = new String[]{"Kozłowski","Kozioł","Lewandowski"};
+
         /*
             Wypisać wartość zmiennych nie możemy wpisując jedynie nazwę zmiennej
          */
@@ -44,6 +45,7 @@ public class TabliceOrazPętle {
         for(int i =0;i<nazwiska.length;i++){
             System.out.println(nazwiska[i]);
         }
+
         /*
         Poniższy przykład wykonuje dokładnie to samo z tym wyjątkiem, że
         stosujemy pętle while.
@@ -59,10 +61,11 @@ public class TabliceOrazPętle {
            Oprócz pętli while jest też pętla do while, która to wykona conajmniej jedną
            iterację, nawet jeśli warunek w while jest fałszywy
          */
+        int liczbaNew = 0;
         do{
-            System.out.println(nazwiska[liczba]);
-            liczba++;
-        }while (liczba <nazwiska.length);
+            System.out.println(nazwiska[liczbaNew]);
+            liczbaNew++;
+        }while (liczbaNew < nazwiska.length);
         System.out.println();
         /*
             Pętla może też być iterowana w przeciwnym kierunku.
