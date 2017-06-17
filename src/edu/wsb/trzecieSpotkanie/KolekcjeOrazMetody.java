@@ -2,6 +2,7 @@ package edu.wsb.trzecieSpotkanie;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 
 /**
  * Created by hyperion on 14.06.17.
@@ -35,59 +36,6 @@ public class KolekcjeOrazMetody {
             java
     };
 
-
-    /*
-        Tablice mają jedną zasadniczą wadę. Gdy raz ustalimy ich rozmiar
-        to nie będziemy mogli ot tak tego rozmiaru zmienić.
-        Wówczas będziemy musieli utworzyć nową tablicę o większym rozmiarze
-        a potem przekopiować starą do nowej, element po elemencie
-
-        Lub użyć dynamicznej wersji tablicy, która to wszystko robi za nas
-        ArrayList ma jednak pewną wadę. Nie może przyjmować
-        wartości zmiennych prostych, a ich obiektowe wersje.
-
-        Zamiast int będzie przyjmować Integer.
-        Tutaj też widać jak tworzymy obiekt klasy ArrayList z użyciem konstruktora
-        domyślnego.
-        */
-    ArrayList<Integer> ocenyNowe = new ArrayList<>();
-
-     /*
-        Poniżej mamy metodę niestatyczną, którą jeśli chcemy odpalić
-        musimy wpierw utworzyć obiekt klasy, w której znajduje się metoda.
-        W metodzie głównej pokażę jak ten proces wygląda.
-      */
-    public void wypiszWyniki(){
-        /*
-        Nie musimy jednak tworzyć obiektu Integer i1 = new Integer(4);
-        A poprzez Integer i1 = 4;
-        Java wykonuje to za nas, ale sam ten proces też wpływa na szybkość
-        działania naszego programu
-     */
-        Integer i1 =4;
-        /*
-            Poniżej widzimy jak utworzony wcześniej obiekt klasy ArrayList o
-            nazwie ocenyNowe zostaje wykorzystany do wywołania
-            metod niestatycznych na nim.
-            Metoda add dodaje do obiektu kolejne elementy Typu Integer(obiektowy
-            wielki brat typu prostego int)
-         */
-        ocenyNowe.add(i1);
-        ocenyNowe.add(5);
-        /*
-            Używaliśmy pętli for np. for(int i =0;i< tablica.length;i++)
-            Taka pętla przechodziła przez wszystkie elementy tablicy.
-            Możemy zrobić to samo używając poniższego rodzaju pętli
-            Zaznaczamy typ elementu jaki jest wewnątrz naszej struktury(tablicy, listy)
-            a potem po : wskazujemy właśnie naszą "kolekcję emenetów"
-            zbiór elementów ocenyNowe zawiera wartości
-            typu Integer, ale możemy też zamiast
-            Integer i użyć int i
-         */
-        for (Integer i : ocenyNowe){
-            System.out.println(i);
-        }
-    }
 
     /*
         Następna tak jak poprzednie metody nie zwracały wartości żadnej.
@@ -187,6 +135,87 @@ public class KolekcjeOrazMetody {
     public static int liczba(){
         return 1;
     }
+    /*
+        Tablice mają jedną zasadniczą wadę. Gdy raz ustalimy ich rozmiar
+        to nie będziemy mogli ot tak tego rozmiaru zmienić.
+        Wówczas będziemy musieli utworzyć nową tablicę o większym rozmiarze
+        a potem przekopiować starą do nowej, element po elemencie
+
+        Lub użyć dynamicznej wersji tablicy, która to wszystko robi za nas
+        ArrayList ma jednak pewną wadę. Nie może przyjmować
+        wartości zmiennych prostych, a ich obiektowe wersje.
+
+        Zamiast int będzie przyjmować Integer.
+        Tutaj też widać jak tworzymy obiekt klasy ArrayList z użyciem konstruktora
+        domyślnego.
+        */
+    ArrayList<Integer> ocenyNowe = new ArrayList<>();
+
+    /*
+       Poniżej mamy metodę niestatyczną, którą jeśli chcemy odpalić
+       musimy wpierw utworzyć obiekt klasy, w której znajduje się metoda.
+       W metodzie głównej pokażę jak ten proces wygląda.
+     */
+    public void wypiszWyniki(){
+        /*
+        Nie musimy jednak tworzyć obiektu Integer i1 = new Integer(4);
+        A poprzez Integer i1 = 4;
+        Java wykonuje to za nas, ale sam ten proces też wpływa na szybkość
+        działania naszego programu
+     */
+        Integer i1 =4;
+        /*
+            Poniżej widzimy jak utworzony wcześniej obiekt klasy ArrayList o
+            nazwie ocenyNowe zostaje wykorzystany do wywołania
+            metod niestatycznych na nim.
+            Metoda add dodaje do obiektu kolejne elementy Typu Integer(obiektowy
+            wielki brat typu prostego int)
+         */
+        ocenyNowe.add(i1);
+        ocenyNowe.add(5);
+        /*
+            Używaliśmy pętli for np. for(int i =0;i< tablica.length;i++)
+            Taka pętla przechodziła przez wszystkie elementy tablicy.
+            Możemy zrobić to samo używając poniższego rodzaju pętli
+            Zaznaczamy typ elementu jaki jest wewnątrz naszej struktury(tablicy, listy)
+            a potem po : wskazujemy właśnie naszą "kolekcję emenetów"
+            zbiór elementów ocenyNowe zawiera wartości
+            typu Integer, ale możemy też zamiast
+            Integer i użyć int i
+         */
+        for (Integer i : ocenyNowe){
+            System.out.println(i);
+        }
+    }
+
+    /*
+        Oprócz takich kolekcji jak ArrayList, która zachowuje się jak tablica, która dynamicznie potrafi
+        zwiększać swój rozmiar, sprawiając, że my nie musimy się tym martwić.
+        Są też inne.
+        Jedną z ciekawszych jest HashSet, który może służyć do przechowywania wartości zmiennych, które nie
+        mogą się powtórzyć jak np. pesel czy w poniższym przykładzie, gdy chcemy by nie potwrzały się
+        języki programowania.
+
+        W przeciwieństwie do poprzedniej kolekcji, którą utworzyliśmy z użyciem konstruktora domyślnego
+        poniższą tworzymy używając konstruktora z parametrem.
+     */
+    HashSet<String> języki = new HashSet<>(Arrays.asList("java","java","c#"));
+    /*
+        Jeśli Typ kolekcji się zgadza możemy przypisać do nowo utworzonej kolekcji starą.
+        Chociaż z tego typu przypisaniami należy być ostrożnym.
+        Zwłaszcza jeśli podczas jednoczesnej deklaracji i inicjalizacji używamy jako
+        parametru w konstruktorze metody Arrays.asList().
+        Na spotkaniu można było sie przekonać, że nawet jeśli na początku wszystko wydaje się w porządku
+        gdzieś po drodze może pojawić się błąd.
+
+        Jest z tego pewien morał. Nie należy się bać jak ide wskaże nam błędy. Im szybciej się one pojawią
+        tym lepiej. Mniej kodu do poprawiania, mniej szukania samego błędu.
+     */
+    public ArrayList<String> wypiszJęzyki()
+    {
+        return new ArrayList<>(języki);
+    }
+
 
     /*
            Poniżej znaduje się statyczna metoda nie zwracając żadnych wartośc, a jako parametr przyjmująca tablicę.
@@ -221,23 +250,34 @@ public class KolekcjeOrazMetody {
             int zmiennaParametr = 0;
             wypiszElement(zmiennaParametr,liczba());
 
+            /*
+                Poniżej widać procedurę wywołania metod niestatycznych.
+                Najpierw należy utworzyć instancję klasy(obiekt) z użyciem konstruktora.
+                A następnie na obiekcie wywołać metodę w sposób analogiczny
+                do tego jak się postępowało z wywołaniem metody statycznej na klasie
 
+                Obiekt tworzy w bardzo podobny sposób jak się tworzyło tablicę
+                z użyciem słowa kluczowego new.
+                Po new piszemy konstruktor domyślny utworzony za nas.
+             */
             KolekcjeOrazMetody kolekcjeOrazMetody = new KolekcjeOrazMetody();
+            /*
+                Następnie używamy nazwy obiektu i na nim wywołujemy metodę.
+             */
             kolekcjeOrazMetody.wypiszWyniki();
+            /*
+                Możemy również dzięki naszemu obiektowi uzyskać dostęp do innego utworzonego
+                w klasie obiektu i potem wywołać odpowiednią metodę.
+                W poniższym przypadku wpierw uzyskujemy dostęp do zmiennej obiektowej
+                ocenyNowe, która jest kolekcją(listą dynamiczną), a potem użyjemy metody add
+                by dodać element do tej kolekcji.
+             */
+            kolekcjeOrazMetody.ocenyNowe.add(6);
 
-//        int liczba = wypiszElement(0,0);
-//        System.out.println(liczba);
-//        System.out.println();
-//        trzecieSpotkanie trzecie = new trzecieSpotkanie();
-//        trzecie.wypiszWyniki();
-//        trzecie.ocenyNowe.add(6);
-//        System.out.println();
-//        trzecie.wypiszWyniki();
 
-//        HashSet<String> języki = new HashSet<>(Arrays.asList("java","java","c#"));
-//        for ( String i : języki ){
-//            System.out.println(i);
-//        }
+
+
+//
 
         Student student = new Student();
         System.out.println(student.getImię());
@@ -278,6 +318,7 @@ public class KolekcjeOrazMetody {
         student.wypiszPowitanie();
         student.wypiszStatyczną();
         System.out.print(student.getImię());
+        System.out.println( student.toString());
 
 
 

@@ -76,4 +76,12 @@ public class Student {
         System.out.println(liczbaStatyczna);
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "imię='" + imię + '\'' +
+                ", oceny=" + oceny +
+                ", liczbaStatyczna=" + liczbaStatyczna +
+                '}';
+    }
 }
