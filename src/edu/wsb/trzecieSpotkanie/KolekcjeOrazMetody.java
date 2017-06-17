@@ -50,7 +50,7 @@ public class KolekcjeOrazMetody {
         Tutaj też widać jak tworzymy obiekt klasy ArrayList z użyciem konstruktora
         domyślnego.
         */
-     ArrayList<Integer> ocenyNowe = new ArrayList<>();
+    ArrayList<Integer> ocenyNowe = new ArrayList<>();
 
      /*
         Poniżej mamy metodę niestatyczną, którą jeśli chcemy odpalić
@@ -128,23 +128,100 @@ public class KolekcjeOrazMetody {
             for( int j : i){
                 System.out.println(j);
             }
-
         }
-
-
     }
 
-    public static void main(String[] args) {
+    /*
+        Poniżej widać deklarację zmiennych nie-statycznych. Oznacza to, że nie możemy już ich użyć(modyfikować
+        w metodach statycznych.
 
-        double[] szerokośćGeograficzna = new double[5];
-        double[] długośćGeograficzna = {3.5,4};
+        W metodach nie-statycznych możemy zarówno modyfikować zadeklarowane zmienne statyczne jak i nie-statyczne
+     */
+    double[] szerokośćGeograficzna = new double[5];
+    double[] długośćGeograficzna = {3.5,4};
 
 
-        double[][] wsp = new double[2][];
+    double[][] wsp = new double[2][];
+
+
+    /*
+        Jak widać na poniższym przykładzie można nie tylko zwracać pojedyńcze wartości określonego typu, ale
+        i całe ich zbioty. W tym przypadku zwrócimy tablicę wielowymiarową.
+        Nie jest to już metoda statyczna. Oznacza to, że by ją wywołać musimy wpierw stworzyć obiekt Klasy w jakiej znajduje się
+        ta metoda. W tym przypadku stworzony obiekt będzie klasy KolekcjeOrazMetody.
+        Tak jak w przypadku metod zwracających pojedyńcze wartości należy pamiętać o słowie kluczowym return, po którym będzie
+        zmienna, inna metoda tego samego typu jak zadeklarowany zwracany typ.
+     */
+    public double[][] zwróćTablicęWielowymiarową(){
+        /*
+            Jak w poniższym przykładzie widać i co starałem się wyjaśnić. Najlepiej tablicę wielowymiarowe traktować jako
+            tablicę w tablicy. Zamiast do wsp[0] = 3; przypisujemy całą tablicę. Poniżej są dwa z kilku sposobów jakie
+            można zastosować.
+            Oczywiście wpierw główną tablicę musimy określić jako doubile[][].
+            Ilość [] określa ilośc wymiarów naszej tablicy
+         */
         wsp[0] = new double[5];
-        wsp[1] = new double[5];
+        wsp[1] = długośćGeograficzna;
+
         wsp[0][0] = 3.5;
         wsp[0][1] = 4;
+
+        return wsp;
+    }
+
+    public void wypiszTablicęWielowymiarową(double[][] tablica){
+        /*
+            Używając pętli for each należy pamiętać, że jako zadeklarowanej zmiennej po której będzie przebiegać pętla musi
+            być typu wartości jakie są wewnątrz naszej struktury danych.
+            Wewnątrz każdego elementu tablicy dwuwymiarowej jest kolejna tablica.
+
+            dopiero wewnątrz tej kolejnej tablicy są już zmienne typu double.
+         */
+        for (double[] tablicaPierwszyPoziom : tablica) {
+            for ( double i : tablicaPierwszyPoziom){
+                System.out.println(tablicaPierwszyPoziom);
+            }
+        }
+
+    }
+    public static int liczba(){
+        return 1;
+    }
+
+    /*
+           Poniżej znaduje się statyczna metoda nie zwracając żadnych wartośc, a jako parametr przyjmująca tablicę.
+           Jest to metoda główna, która przez virtualną maszynę jest odpalana jako pierwsza i od niej niejako zależy czy
+           i jaki fragment kodu zostanie uruchomiony.
+
+           Tutaj będziemy uruchamiać wszystkie nasze metody
+    */
+    public static void main(String[] args) {
+
+            /*
+                Linijka poniżej to wywołanie metody statycznej.
+                Wykonujemy to poprzez podanie klasy w jakiej znajduje się metoda, a po kropce wypisujemy samą metodę.
+                <Nazwa klasy, gdzie jest metoda statyczna>.<Nazwa samej metody statycznej>
+             */
+            KolekcjeOrazMetody.wypiszTablicęJednowymariową();
+            /*
+                 Jeśli jednak wywołujemy metodę w tej samej klasie, gdzie jest metoda statyczna to wówczas
+                 mamy wybór. Możemy podać nazwę klasy, a po kropce nazwę metody lub
+                 podać nazwę samej metody statycznej
+
+                 Dodatkowo poniższa metoda przyjmuje jako parametr wartość typu prostego int.
+                 Możemy go podać bezpośrednio, użyć zmiennej lub użyć metody zwracającej taki typ danych.
+                 Wpierw wpiszemy zwyczajnie liczbę 4.
+             */
+            edytujTablicę(liczba());
+            /*
+                W poniższej metodzie statycznej możemy wpisać dwa parametry typu int.
+                Pierwszy wpiszemy jako zmienną, która przed wywołaniem metody będzie stworzona i przypisana do niej wartość.
+                A drugi parametr wpiszemy jako metodę
+             */
+            int zmiennaParametr = 0;
+            wypiszElement(zmiennaParametr,liczba());
+
+
             KolekcjeOrazMetody kolekcjeOrazMetody = new KolekcjeOrazMetody();
             kolekcjeOrazMetody.wypiszWyniki();
 
