@@ -85,6 +85,11 @@ public class Student {
     /*
         Mamy setter, który dokonuje zmiany całej zmiennej oceny, która jest ArrayList
         Chcielibyśmy jednak dokonać zmiany pojedyńczej wartośći jednego z elementów w tej kolekcji.
+
+        W metodzie poniżej używamy ponadto typu referencyjnego Double.
+        Jest to typ, który jest niejako większym bratem zmiennej prostej double.
+        Powstał w taki sam sposób w jaki my utworzyliśmy nasz nowy Typ Student.
+
      */
     public void setOcena(Double ocena, Double nowaOcena){
         /*
@@ -113,36 +118,63 @@ public class Student {
         }
     }
 
+    /*
+        Poniższa metoda wypisuje informacje dotyczące konkretnego studenta, którego
+        stworzyliśmy przy użyciu konstruktora.
+     */
     public void wypiszInformacje(){
         System.out.println("Mam na imię " + imię);
         System.out.print("Moje oceny to: ");
-        for (Number en: oceny){
+        for (Double en: oceny){
             System.out.print(en+" ");
         }
-
-
-
     }
-
-    public Student(String imię, Double ocena,Double nowaOcena){
-        setImię(imię);
-        setOcena(ocena,nowaOcena);
-
-
-
-    }
+    /*
+        Oto konstruktor domyślny. Sam konstruktor tworzymy poprzez danie modyfikatora dostępu
+        public. Nazwa jego jest taka sama jak nazwa klasy, w której się znajduje.
+        Jest on pusty. Jak wspominałem. W sytuacji, gdy nie tworzymy żadnego konstruktora konstruktor
+        domyślny, taki jak poniżej jest tworzony za nas. Jednak gdy utworzymy jakiś konstruktor to konstruktor
+        domyślny również musimy utworzyć.
+     */
     public Student(){}
+    /*
+        Poniższy konstruktor jest już konstruktorem z parametrami. Jak widzicie konstruktory mają
+        identyczne nazwy. Skąd zatem Java wie jaki z nich użyć ?
+        Tutaj do akcji wkracza mechanizm przeciążenia.
+        W przypadku gdy konstruktory lub metody(ich ten mechanizm dotyczy) Java spogląda na ilość i typ
+        parametrów i w zależności od tego używa konkretnego konstruktora.
 
-
+        Ten konstruktor przyjmuje dwa parametry.
+     */
+    public Student(String imię, ArrayList<Double> oceny){
+        /*
+            Moglibyśmy dokonać przypisania jak w naszych setterach, ale
+            w przypadku gdy w naszym setterze jest instrukcja warunkowa, która plinuje, by
+            np. jako oceny nie można było wpisać wartości -2.
+            Zamiast kopiować fragment kodu i liczyć, że nie będziemy musieli nigdy modyfikować
+            możemy w konstruktorze wywołać metodę settera.
+            Dzięki temu jak będziemy chcieli zmdyfikować przypisanie to zmodyfikujemy fragment kodu w jednym
+            miejscu, a nie w kilku.
+         */
+        setImię(imię);
+        setOceny(oceny);
+    }
+    /*
+        Poniższe dwie metody to przykład przeciążenia metod.
+     */
     public  void wypiszPowitanie(){
         System.out.println("Witaj");
-        liczbaStatyczna++;
     }
     public void wypiszPowitanie(String name){
         System.out.println("Witaj " + name);
+    }
+    /*
+        Tutaj zajmiemy się modyfikowaniem zmiennej statycznej.
+        Metoda wywoływana na obiekcie modyfikuje wartość zmiennej statycznej.
+     */
+    public void modyfikujeZmiennąStatyczną(){
         liczbaStatyczna++;
     }
-
     public void wypiszStatyczną(){
         System.out.println(liczbaStatyczna);
     }
