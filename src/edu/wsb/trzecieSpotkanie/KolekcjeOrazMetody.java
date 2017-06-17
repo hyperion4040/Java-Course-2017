@@ -231,7 +231,7 @@ public class KolekcjeOrazMetody {
                 Wykonujemy to poprzez podanie klasy w jakiej znajduje się metoda, a po kropce wypisujemy samą metodę.
                 <Nazwa klasy, gdzie jest metoda statyczna>.<Nazwa samej metody statycznej>
              */
-            KolekcjeOrazMetody.wypiszTablicęJednowymariową();
+        KolekcjeOrazMetody.wypiszTablicęJednowymariową();
             /*
                  Jeśli jednak wywołujemy metodę w tej samej klasie, gdzie jest metoda statyczna to wówczas
                  mamy wybór. Możemy podać nazwę klasy, a po kropce nazwę metody lub
@@ -241,14 +241,14 @@ public class KolekcjeOrazMetody {
                  Możemy go podać bezpośrednio, użyć zmiennej lub użyć metody zwracającej taki typ danych.
                  Wpierw wpiszemy zwyczajnie liczbę 4.
              */
-            edytujTablicę(liczba());
+        edytujTablicę(liczba());
             /*
                 W poniższej metodzie statycznej możemy wpisać dwa parametry typu int.
                 Pierwszy wpiszemy jako zmienną, która przed wywołaniem metody będzie stworzona i przypisana do niej wartość.
                 A drugi parametr wpiszemy jako metodę
              */
-            int zmiennaParametr = 0;
-            wypiszElement(zmiennaParametr,liczba());
+        int zmiennaParametr = 0;
+        wypiszElement(zmiennaParametr, liczba());
 
             /*
                 Poniżej widać procedurę wywołania metod niestatycznych.
@@ -260,11 +260,11 @@ public class KolekcjeOrazMetody {
                 z użyciem słowa kluczowego new.
                 Po new piszemy konstruktor domyślny utworzony za nas.
              */
-            KolekcjeOrazMetody kolekcjeOrazMetody = new KolekcjeOrazMetody();
+        KolekcjeOrazMetody kolekcjeOrazMetody = new KolekcjeOrazMetody();
             /*
                 Następnie używamy nazwy obiektu i na nim wywołujemy metodę.
              */
-            kolekcjeOrazMetody.wypiszWyniki();
+        kolekcjeOrazMetody.wypiszWyniki();
             /*
                 Możemy również dzięki naszemu obiektowi uzyskać dostęp do innego utworzonego
                 w klasie obiektu i potem wywołać odpowiednią metodę.
@@ -272,64 +272,17 @@ public class KolekcjeOrazMetody {
                 ocenyNowe, która jest kolekcją(listą dynamiczną), a potem użyjemy metody add
                 by dodać element do tej kolekcji.
              */
-            kolekcjeOrazMetody.ocenyNowe.add(6);
+        kolekcjeOrazMetody.ocenyNowe.add(6);
+        /*
+            Do tej pory korzystaliśmy z predefiniowanych typów zmiennych jak zmienne proste int
+            lub referencyjne String. Nie zapominając o dużych braciach zmiennych prostych jakie używaliśmy
+            w kolekcjach jak Integer (referencyjna odmiana zmiennej prostej int).
+            W przypadku np. studenta nie ma zmiennych w pełni opisujących go.
+            Można oczywiście opisać studenta z pomocą predefiniowanych typów, ale nie będzie
+            to proste, a też pojawi się problem z czytelnością samego kodu.
 
-
-
-
-//
-
-        Student student = new Student();
-        System.out.println(student.getImię());
-        student.setImię("Adrian");
-        System.out.println(student.getImię());
-        ArrayList<Double> noweOceny = new ArrayList(Arrays.asList(4,5,4.5));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                // new ArrayList(Arrays.asList(4.0,5.0));
-//        noweOceny.add(4.0);
-
-
-        student.setOceny(noweOceny);
-        System.out.println(student.getOceny());
-        System.out.println();
-        System.out.print(2);
-        student.wypiszInformacje();
-        System.out.println();
-        Student student1 = new Student("Marek",4.5);
-        System.out.print(student1.liczbaStatyczna);
-        student1.wypiszStatyczną();
-        System.out.print(student1.getImię());
-        student1.setImię("Marian");
-        student.wypiszPowitanie();
-        student.wypiszStatyczną();
-        System.out.print(student.getImię());
-        System.out.println( student.toString());
-
-
-
-
-//        wypiszTablicęJednowymariową();
-//        edytujTablicę(-6);
-//        wypiszTablicęJednowymariową();
-
-
-
-
+            Stworzymy zatem klasę Student.
+         */
 
     }
 }
