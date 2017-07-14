@@ -8,8 +8,20 @@ import java.util.Map;
  */
 public class Programista extends Pracownik {
 
+    /*
+        Słowo kluczowe final przy nazwie zmiennej oznacza, że zmienna raz zainicjowana nie może zostać
+        zmodyfikowana.
 
-    HashMap<String,poziomZaawansowania > znaneTechnologie = new HashMap<>();
+     */
+    final HashMap<String,poziomZaawansowania > znaneTechnologie = new HashMap<>();
+
+    /*
+        Poniższy przypadek to użycie słowa kluczowego final oraz static.
+        Nowością jest to, że nazwa zmiennej jest napisana dużymi literami.
+        Oznacza to, że mamy tutaj stałą wartość, której już nie możemy zmienić i jest stała dla całej
+        klasy Programista.
+     */
+    final static byte JAVA_VERSION = 8;
 
 
     Programista(){}
@@ -32,8 +44,13 @@ public class Programista extends Pracownik {
         }
     }
 
+    /*
+        Poniższą metodę, która po raz pierwszy pojawiła się w interfejsie Osoba nadpisujemy, ale dodając
+        słowo kluczowe final sprawiamy, że klasa dziedzicząca po klasie Programista nie będzie mogła
+        już tej metody nadpisać.
+     */
     @Override
-    public void wyświetlImie() {
+    final public void wyświetlImie() {
 
     }
 
